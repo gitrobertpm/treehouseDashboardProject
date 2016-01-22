@@ -10,10 +10,10 @@
 	<link rel="stylesheet" type="text/css" href="css/styles.css" />
 	<link rel="stylesheet" type="text/css" href="css/responsive.css" />
 	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,700' rel='stylesheet' type='text/css'>
-	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script> -->
 </head>
 <body>
 	<div class="primeWrap">
+	
 		<header>
 			<h1><a href="#">Your<span>App<span>&trade;</span></span></a></h1>
 			<a href="#" class="bellButton"><img src="icons/icon-bell.svg" alt="Notification Bell" class="bell"><span class="notificationIndicator"></span></a>
@@ -21,6 +21,8 @@
 				<a href="#"><img src="img/me.jpg" alt="Avatar" class="avatar">Robert Manolis</a>
 			</div>
 		</header>
+		
+		
 		<div class="modal modalNav">
 			<div class="modalWrap">
 				<h2>These are your notifications</h2>
@@ -35,21 +37,23 @@
 				<a href="#" class="lightOn">keep indicator light on<span class="notificationIndicator"></span></a>
 			</div>
 		</div>
-		<div class="spacer"></div>
-		<!-- <div class="navOverWrap"> -->
-			<nav>
-				<div class="navInnerWrap">
-					<div id="navIndicator" class="navIndicator niFirst"></div>
-					<ul>
-						<li class="navLink"><img src="icons/icon-dashboard.svg" alt="Dashboard Icon"><span class="navLinkName">Dashboard</span></li>
-						<li class="navLink"><img src="icons/icon-members.svg" alt="Members Icon"><span class="navLinkName">Members</span></li>
-						<li class="navLink"><img src="icons/icon-visits.svg" alt="Visits Icon"><span class="navLinkName">Visits</span></li>
-						<li class="navLink"><img src="icons/icon-settings.svg" alt="Settings Icon"><span class="navLinkName">Settings</span></li>
-					</ul>
-				</div>
-			</nav>
-		<!-- </div> -->
+		
+		
+		<nav>
+			<div class="navInnerWrap">
+				<div id="navIndicator" class="navIndicator niFirst"></div>
+				<ul>
+					<li class="navLink"><img src="icons/icon-dashboard.svg" alt="Dashboard Icon"><span class="navLinkName">Dashboard</span></li>
+					<li class="navLink"><img src="icons/icon-members.svg" alt="Members Icon"><span class="navLinkName">Members</span></li>
+					<li class="navLink"><img src="icons/icon-visits.svg" alt="Visits Icon"><span class="navLinkName">Visits</span></li>
+					<li class="navLink"><img src="icons/icon-settings.svg" alt="Settings Icon"><span class="navLinkName">Settings</span></li>
+				</ul>
+			</div>
+		</nav>
+
+			
 		<div class="mainWrap">
+		
 			<section class="dashboard">
 				<h2>Dashboard</h2>
 				<div class="searchWrap">
@@ -61,6 +65,7 @@
 					<a href="#" class="alertClose">x</a>
 				</div>
 			</section>
+			
 			
 			<section class="traffic">
 				<h3>TRAFFIC</h3>
@@ -78,13 +83,14 @@
 					<canvas id="cMonthly" width="300" height="300"></canvas>
 
 				</div>
-
 			</section>
+			
 			
 			<section class="dailyTraffic">
 				<h3>DAILY TRAFFIC</h3>
 				<canvas id="cDailyTraffic" width="300" height="300"></canvas>
 			</section>
+			
 			
 			<section class="mobileUsers">
 				<h3>MOBILE USERS</h3>
@@ -95,6 +101,7 @@
 					<li class="desktops"><span></span>Desktop</li>
 				</ul>
 			</section>
+			
 			
 			<section class="socialStats">
 				<h3>SOCIAL STATS</h3>
@@ -107,7 +114,6 @@
 							<h3>Twitter</h3>
 							<p class="twitterCount">10,345</p>
 						</div>
-						
 					</div>
 					<div class="socialWrap">
 						<div class="socialIconWrap">
@@ -130,6 +136,7 @@
 				</div>
 			</section>
 			
+			
 			<section class="newMembers">
 				<h3>NEW MEMBERS</h3>
 				<ul>
@@ -143,6 +150,7 @@
 				</ul>
 			</section>
 			
+			
 			<section class="recentActivity">
 				<h3>RECENT ACTIVITY</h3>
 				<ul>
@@ -155,6 +163,7 @@
 					<li><img src="img/myKids.png" alt="New Member Photo"><span class="recentActivityComment">The kids posted</span> YourApp's SEO Tips<br><span class="recentActivityAgo">1 day ago</span><span class="recentActivityArrow"></span></li>
 				</ul>
 			</section>
+			
 			
 			<section class="messageUser">
 				<h3>MESSAGE USER</h3>
@@ -171,6 +180,7 @@
 				</div>
 			</section>	
 				
+				
 			<section class="settings" id="settings">
 				<h3>SETTINGS</h3>
 				<P>Send Email Notifications<span class="switchWrap"><span class="switchLabel">ON</span><span class="switchKnob"> </span></span></P>
@@ -181,16 +191,12 @@
 				<input type="text" name="search" placeholder="Search Label" autocomplete="on" class="labelCerch">
 				<button class="settingsSaveButton">SAVE</button>
 				<button disabled="true" class="settingsCancelButton">CANCEL</button>
-			</section>	
+			</section>			
 		</div>
-		
-		<!-- <img src="dashboard.png"/> -->
-
 	</div>
 <script type="text/javascript" src="js/smoothscroll.js"></script>
 <script type="text/javascript" src="js/Chart.min.js"></script>
 <script type="text/javascript" src="js/scripts.js"></script>
 <script type="text/javascript" src="js/charts.js"></script>
-
 </body>
 </html>
