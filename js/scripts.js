@@ -236,4 +236,10 @@ var settingsSwitches = function() {
 };
 
 settingsSwitches();
+
+// DISABLE CANCEL BUTTON
+document.getElementsByClassName("settingsCancelButton").disabled = true;
+
 //* ======================================== *//
+
+

@@ -29,6 +29,19 @@
 		font-size: 1em;
 	}
 	/*** END  ******************************************/
+	
+	
+	/*********************************************************
+	 SETTINGS
+	**********************************************************/
+	.dropDownTimezone {
+		Position: absolute;
+		top: 105px;
+		left: 105px;
+		color: rgb(75,75,75);
+		width: calc(100% - 135px);
+	}
+	/*** END  ******************************************/
 }
 /*** END MEDIUM SCREENS ************************************/
 
@@ -96,12 +109,6 @@
 	/*********************************************************
 	 NAV  750px
 	**********************************************************/
-	.spacer {
-		display: block;
-		content: "";
-		width: 100px;
-	}
-	
 	nav {
 		display: inline-block;
 		width: 100px;
@@ -165,6 +172,8 @@
 	**********************************************************/
 	.modal {
 		background: rgba(0,0,0,0.75);
+		height: 1825px;
+		z-index: 9999;
 	}
 	
 	.modalWrap {
@@ -176,6 +185,7 @@
 		background: rgba(75,75,115,0.95);
 		border: 3px solid rgb(175,180,250);
 		border-radius: 5px;
+		z-index: 9999;
 	}
 
 	.modal h2 {
@@ -291,7 +301,6 @@
 	.canvasWrap {
 		width: calc(100% - 25px);
 		padding-left: 20px;
-		/* margin-bottom: 35px; */
 		clear: both;
 	}
 	/*** END  ***************************************/
@@ -416,16 +425,12 @@
 	}
 	
 	.userMessage {
-		height: 288px;
+		height: 350px;
 	}
 	
 	.modalMessageUser p {
 		margin: 100px auto 75px;
 		font-size: 1.2em;
-	}
-	
-	.modalMessageUser button {
-		
 	}
 	/*** END  ******************************************/
 
@@ -441,6 +446,19 @@
 		width: 49%;
 		border-top: none;
 		border-left: 1px solid rgb(225,225,225);
+	}
+	
+	.timeZoneWrap p {
+		margin-top: 0px;
+		margin-bottom: 65px;
+	}
+	
+	.dropDownTimezone {
+		top: 115px;
+		left: 17px;
+		width: calc(100% - 45px);
+		margin-left: 12px;
+		margin-bottom: 15px;
 	}
 	/*** END  ******************************************/
 }
@@ -544,7 +562,7 @@
 	
 	
 	/*********************************************************
-	 RECENT ACTIVITY  750px
+	 RECENT ACTIVITY  1250px
 	**********************************************************/
 	.recentActivityArrow {
 		bottom: 10px;
@@ -555,12 +573,20 @@
 	
 	
 	/*********************************************************
-	 SETTINGS  750px
+	 SETTINGS  1250px
 	**********************************************************/
 	.switchWrap {
 		right: auto;
 		left: 50%;
 		margin-left: -37.5px;
+	}
+	
+	.dropDownTimezone {
+		top: 115px;
+		left: 17px;
+		width: calc(50% + 10px);
+		margin-left: 12px;
+		margin-bottom: 15px;
 	}
 	/*** END  ******************************************/
 }
