@@ -1,0 +1,798 @@
+/********************************************************
+ STYLES.CSS
+
+ DESIGNED FOR SMALL SCREENS FIRST 
+ STYLES FOR LARGER SCREENS IN RESPONSIVE.CSS 
+ *******************************************************/
+
+
+/*********************************************************
+ MY GENERAL RESETS
+**********************************************************/
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 1em;
+	position: relative;
+	text-align: center;
+	background: rgb(75,75,115);
+}
+
+html, body, header, section, footer, div,
+h1, h2, h3, h4, h5, h6, p, span,
+ol, ul, li, q, cite, code {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+	outline: none;
+	-webkit-transition-duration: .25s;transition-duration: .25s;
+}
+
+a:active, a:focus, a:hover {
+	color: rgb(120,220,120);
+	-webkit-transition-duration: .25s;transition-duration: .25s;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+input {
+	display: block;
+	font-size: 1em;
+	color: rgb(100,100,100);
+	height: 45px;
+	padding-left: 15px;
+	border: 1px solid rgb(225,225,225);
+	border-radius: 5px;
+	-webkit-transition-duration: .25s;transition-duration: .25s;
+}
+
+::-webkit-input-placeholder { /* Safari, Chrome and Opera */
+  color: rgb(175,175,175);
+}
+
+:-moz-placeholder { /* Firefox 18- */
+  color: rgb(175,175,175);
+}
+
+::-moz-placeholder { /* Firefox 19+ */
+  color: rgb(175,175,175);
+}
+
+:-ms-input-placeholder { /* IE 10+ */
+  color: rgb(175,175,175);
+}
+
+::-ms-input-placeholder { /* Edge */
+  color: rgb(175,175,175);
+}
+
+:placeholder-shown { /* Standard one last! */
+  color: rgb(175,175,175);
+}
+
+input:active, input:focus, input:hover, textarea:active, textarea:focus, textarea:hover {
+	border: 1px solid rgba(120,120,190,0.7);
+	-webkit-transition-duration: .25s;transition-duration: .25s;
+}
+
+button {
+	font-weight: bold;
+	letter-spacing: 1px;
+	color: rgb(250,250,250);
+	margin: 15px auto;
+	padding: 15px;
+	background: rgb(120,120,190);
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	-webkit-transition-duration: .25s;transition-duration: .25s;
+}
+
+button:active, button:focus, button:hover {
+	color: rgb(120,220,120);
+	-webkit-transition-duration: .25s;transition-duration: .25s;
+}
+
+button:disabled {
+	background: rgb(200,200,200);
+	cursor: default;
+}
+
+button:disabled:active, button:disabled:focus, button:disabled:hover {
+	color: rgb(250,250,250);
+}
+
+hr {
+	color: rgba(225,225,225,0.3);
+	width: 100%;
+	margin: 10px auto;
+}
+/*** END GENERAL ****************************************/
+
+
+
+
+
+/*********************************************************
+ HEADER
+**********************************************************/
+header {
+	position: relative;
+	background: rgb(115,120,190);
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+header h1 {
+	display: inline-block;
+	color: rgb(250,250,250);
+	letter-spacing: 1px;
+	margin-left: -90px;
+}
+
+header h1 span {
+	font-weight: 100;
+}
+
+header h1 span span {
+	display: inline-block;
+	font-size: .4em;
+	margin-top: 7.5px;
+	vertical-align: top;
+}
+
+header a {
+	color: rgb(250,250,250);
+}
+
+.avatarWrap {
+	margin: 10px auto auto;
+}
+
+.avatarWrap a {
+	font-size: 1.3em;
+}
+
+.avatar {
+	height: 30px;
+	margin-left: -60px;
+	margin-right: 10px;
+	border-radius: 50%;
+}
+
+.bell {
+	display: inline-block;
+	position: absolute;
+	top: 37px;
+	width: 25px;
+	height: 25px;
+	margin-left: 65px;
+	-webkit-filter: invert(0);filter: invert(0);
+	-webkit-transition-duration: .25s;transition-duration: .25s;
+}
+
+.notificationIndicator {
+	display: inline-block;
+	position: absolute;
+	top: 33px;
+	width: 8px;
+	height: 8px;
+	margin-left: 85px;
+	background: rgb(130,220,130);
+	border-radius: 50%;
+	-webkit-filter: drop-shadow(0px 0px 5px rgba(130,220,130,.8));filter: drop-shadow(0px 0px 5px rgba(130,220,130,.8));
+}
+
+/*** END HEADER ******************************************/
+
+
+
+/*********************************************************
+ NAV
+**********************************************************/
+nav {
+	position: relative;
+	width: 100%;
+	background: rgb(75,75,115);
+	z-index: 999;
+}
+
+.navInnerWrap {
+	display: -webkit-box;display: -webkit-flex;display: -ms-flexbox;display: flex;
+	-webkit-box-pack: center;-webkit-justify-content: center;-ms-flex-pack: center;justify-content: center;
+	top: 0;
+	left: 0;
+	padding-top: 20px; 
+	padding-bottom: 15px;
+	width: 100%;
+	background: rgb(75,75,115);
+}
+
+.navIndicator {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 50px;
+	height: 3px;
+	background: rgb(130,220,130);
+	border-radius: 0 0 5px 5px;
+	-webkit-transform: rotate(0deg);transform: rotate(0deg);
+	-webkit-filter: drop-shadow(0px 3px 5px rgba(130,220,130,.8));filter: drop-shadow(0px 3px 5px rgba(130,220,130,.8));
+}
+
+.niFirst {
+	margin-left: -120px;
+}
+
+.niSecond {
+	margin-left: -60px;
+}
+
+.niThird {
+	margin-left: 4px;
+}
+
+.niFourth {
+	margin-left: 70px;
+}
+
+nav ul {
+	position: relative;
+}
+
+nav ul li {
+	display: inline-block;
+	padding-right: 10px;
+	padding-left: 10px;
+	cursor: pointer;
+}
+
+nav ul li img {
+	width: 40px;
+	height: 40px;
+	-webkit-filter: invert(0);filter: invert(0);
+	-webkit-transition-duration: .25s;transition-duration: .25s;
+}
+
+.navLinkName {
+	display: none;
+	color: rgb(120,220,120);
+}	
+/*** END NAV *********************************************/
+
+
+
+
+/*********************************************************
+ MODAL
+**********************************************************/
+.modal {
+	display: none;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	color: rgb(250,250,250);
+	background: rgba(75,75,115,0.95);
+	z-index: 9999;
+}
+
+.modal h2 {
+	color: rgb(130,220,130);
+	margin: 25px auto;
+}
+
+.modal ul {
+	width: 250px;
+	margin: 25px auto 50px calc(50% - 125px);
+}
+
+.modal ul li {
+	text-align: left;
+	margin: 15px auto;
+}
+
+.modal a {
+	display: block;	
+	color: rgb(250,250,250);
+	width: 250px;
+	padding: 5px;
+	margin: 10px auto;
+	background: rgb(115,120,190);
+	border: 2px solid rgb(175,180,250);
+	border-radius: 5px;
+}
+
+.modal a:active, .modal a:focus, .modal a:hover {
+	color: rgb(130,220,130);
+}
+
+.lightOn {
+	position: relative;
+}
+
+.modal .notificationIndicator {
+	top: 10px;
+	margin-left: 20px;
+}
+/*** END MODAL ****************************************/
+
+
+
+
+/*********************************************************
+ MAIN WRAP
+**********************************************************/
+.mainWrap {
+	padding-bottom: 50px;
+	background: rgb(250,250,250);
+	margin-left: auto;
+}
+
+section {
+	position: relative;
+	padding: 15px;
+	padding-bottom: 25px;
+	vertical-align: top;
+}
+
+section h2, section h3 {
+	color: rgb(100,100,100);
+	font-weight: 400;
+	text-align: left;
+	padding: 15px;
+}
+/*** END  ***************************************/
+
+
+
+
+/*********************************************************
+ DASHBOARD
+**********************************************************/
+.cerch {
+	font-size: 1.25em;
+	width: calc(100% - 15px);
+	margin-left: 15px;
+}
+
+.magGlass {
+	position: absolute;
+	top: 85px;
+	right: 27px;
+	width: 25px;
+}
+
+.alertWrap {
+	position: relative;
+	color: rgb(250,250,250);
+	margin: 25px auto 0px 15px;
+	padding: 45px 10px 25px;
+	background: rgb(115,120,190);
+	border-radius: 5px;
+}
+
+.alertWrap p span {
+	font-weight: bold;
+	margin-right: 10px;
+}
+
+.alertWrap a {
+	position: absolute;
+	top: 5px;
+	right: 15px;
+	color: rgb(250,250,250);
+	font-weight: bold;
+	font-size: 1.75em;
+}
+
+.alertWrap:active > a, .alertWrap:focus > a, .alertWrap:hover > a {
+	color: rgb(130,220,130);
+}
+/*** END DASHBOARD***************************************/
+
+
+
+
+
+/*********************************************************
+ TRAFFIC
+**********************************************************/
+.traffic {
+	border: none;
+	border-bottom: 1px solid rgb(225,225,225);
+}
+
+.traffic h3 {
+	width: 250px;
+}
+
+.traffic ul {
+	text-align: left;
+	margin: 10px auto 25px 10px;
+}
+
+.traffic ul li {
+	display: inline-block;
+	color: rgb(100,100,100);
+	/* font-weight: bold; */
+	padding: 5px;
+	cursor: pointer;
+}
+
+.durationSelected {
+	color: white !important;
+	background: rgb(130,200,145);
+	border: 5px solid rgb(130,200,145);
+	border-radius: 20px;
+}
+
+.canvasWrap {
+	width: 100%;
+}
+
+#cHourly {
+	display: none;
+}
+
+#cDaily {
+	display: none;
+}
+
+#cWeekly {
+	display: none;
+}
+/*** END  ***************************************/
+
+
+
+
+
+/*********************************************************
+ DAILY TRAFFIC
+**********************************************************/
+
+
+
+/*** END  ***************************************/
+
+
+
+
+
+/*********************************************************
+ MOBILE USERS
+**********************************************************/
+.mobileUsers {
+	border-top: 1px solid rgb(225,225,225);
+	padding-bottom: 150px;
+}
+
+.mobileUsers ul {
+	position: absolute;
+	margin-left: 15px;
+}
+
+.mobileUsers ul li {
+	text-align: left;
+}
+
+.mobileUsers ul li span {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	margin-top: 5px;
+	margin-right: 5px;
+	border-radius: 5px;
+}
+
+.phones span {
+	background: rgb(130,200,145); 
+}
+
+.tablets span {
+	background: rgb(120,180,190); 
+}
+
+.desktops span {
+	background: rgb(120,120,190); 
+}
+/*** END  ***************************************/
+
+
+
+
+
+
+/*********************************************************
+ SOCIAL STATS
+**********************************************************/
+.socialStats {
+	border-top: 1px solid rgb(225,225,225);
+	border-bottom: 1px solid rgb(225,225,225);
+}
+
+.socialWrap {
+	position: relative;
+	height: 135px;
+	padding: 5px 15px;
+	margin: 10px auto 35px;
+	border: 1px solid rgb(225,225,225);
+	border-radius: 5px;
+	clear: both;
+}
+
+.socialIconWrap {
+	position: absolute;
+	top: 12.5px;
+	right: 35px;
+	width: 65px;
+	height: 65px;
+	padding: 15px;
+	margin: 25px auto;
+	background: rgb(120,120,190);
+	border-radius: 50%;
+}
+
+.socialIconWrap img {
+	width: 35px;
+	background: rgb(120,120,190);
+}
+
+.socialWrap h3 {
+	font-weight: bold;
+	color: rgb(120,120,190);
+	margin-left: -15px;
+}
+
+.socialWrap p {
+	font-size: 2.5em;
+	font-weight: 200;
+	float: left;
+	margin-left: 0px;
+}
+/*** END  ***************************************/
+
+
+
+
+
+
+/*********************************************************
+ NEW MEMBERS
+**********************************************************/
+.newMembers ul {
+	padding-left: 20px;
+}
+
+.newMembers ul li {
+	position: relative;
+	text-align: left;
+	margin: 20px auto 10px 65px;
+}
+
+.newMembers ul li img {
+	position: absolute;
+	left: -70px;
+	bottom: 5px;
+	width: 50px;
+	height: 50px;
+	
+}
+
+.newMembersEmail {
+	color: rgb(120,120,190);
+	font-size: .8em;
+}
+
+.newMembersDate {
+	position: absolute;
+	top: 0;
+	right: 0;
+	font-weight: 200;
+}
+/*** END  ******************************************/
+
+
+
+
+/*********************************************************
+ RECENT ACTIVITY
+**********************************************************/
+.recentActivity {
+	border-top: 1px solid rgb(225,225,225);
+}
+
+.recentActivity ul {
+	padding-left: 20px;
+}
+
+.recentActivity ul li {
+	position: relative;
+	text-align: left;
+	margin: 20px auto 10px 65px;
+}
+
+.recentActivity ul li img {
+	position: absolute;
+	left: -70px;
+	bottom: 5px;
+	width: 50px;
+	height: 50px;
+}
+
+.recentActivityComment {
+	font-weight: 200;
+}
+
+.recentActivityArrow {
+	position: absolute;
+	bottom: 5px;
+	right: 0;
+	width: 15px;
+	height: 15px;
+	border-right: 2px solid rgb(120,120,190);
+	border-bottom: 2px solid rgb(120,120,190);
+	-webkit-transform: rotate(-90deg);transform: rotate(-45deg);
+	-webkit-transition-duration: .25s;transition-duration: .25s;
+	cursor: pointer
+}
+
+.recentActivityArrow:active, .recentActivityArrow:focus, .recentActivityArrow:hover {
+	border-right: 2px solid rgb(130,220,130);
+	border-bottom: 2px solid rgb(130,220,130);
+	-webkit-transition-duration: .25s;transition-duration: .25s;
+}
+/*** END  ******************************************/
+
+
+
+
+
+
+/*********************************************************
+ MESSAGE USER
+**********************************************************/
+.messageUser {
+	border-top: 1px solid rgb(225,225,225);
+}
+
+.messageUser input {
+	width: calc(100% - 15px);
+	margin: 15px auto 15px 15px;
+}
+
+.userMessage {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 1.1em;
+	color: rgb(100,100,100);
+	width: calc(100% - 15px);
+	height: 120px;
+	margin-left: 15px;
+	padding: 15px;
+	border: 1px solid rgb(225,225,225);
+	border-radius: 5px;
+}
+
+.messageUser button {
+	width: calc(100% - 15px);
+	margin-left: 15px;
+}
+
+.modalMessageUser {
+	display: none;
+	position: absolute;
+	top: 25px;
+	right: 15px;
+	bottom: 100px;
+	left: 30px;
+	color: rgb(250,250,250);
+	padding: 15px;
+	background: rgba(75,75,115,0.95);
+	border-radius: 5px;
+	z-index: 999;
+}
+
+.modalMessageUser p {
+	margin: 50px auto 25px;
+}
+
+.modalMessageUserErP {
+	display: none;
+}
+
+.modalMessageUser button {
+	width: 90%;
+	max-width: 300px;
+	margin: auto;
+	border: 1px solid rgb(120,220,130);
+	box-shadow: 0px 3px 5px rgba(120,220,130,0.7);
+	z-index: 99999;
+}
+/*** END  ******************************************/
+
+
+
+
+
+/*********************************************************
+ SETTINGS
+**********************************************************/
+.settings {
+	padding-bottom: 50px;
+	border-top: 1px solid rgb(225,225,225);
+}
+
+.settings p {
+	position: relative;
+	text-align: left;
+	margin: 25px auto 35px;
+	margin-left: 15px;
+}
+
+.switchWrap {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	width: 75px;
+	height: 30px;
+	padding: 5px;
+	background: rgb(120,120,190);
+	border: 2px solid rgb(210,210,210);
+	border-radius: 20px;
+	cursor: pointer;
+	-webkit-transition-duration: .25s;transition-duration: .25s;
+}
+
+.switchWrap:active > .switchLabel, .switchWrap:focus > .switchLabel, .switchWrap:hover > .switchLabel {
+	color: rgb(130,220,130);
+	-webkit-transition-duration: .25s;transition-duration: .25s;
+}
+
+.switchLabel {
+	display: inline-block;
+	color: rgb(250,250,250);
+	font-weight: bold;
+	vertical-align: top;
+	margin-top: -3px;
+	margin-left: 5px;
+}
+
+.switchKnob {
+	content: "";
+	width: 15px;
+	height: 15px;
+	background: rgb(250,250,250);
+	border: 2px solid rgb(210,210,210);
+	border-radius: 50%;
+	float: right;
+}
+
+.settings input {
+	width: calc(100% - 15px);
+	margin: 49px auto 3px;
+	margin-left: 15px;
+}
+
+.settings button {
+	width: 45%;
+}
+
+.settingsSaveButton {
+	float: left;
+	margin-left: 15px;
+}
+
+.settingsCancelButton {
+	float: right;
+}
+/*** END  ******************************************/

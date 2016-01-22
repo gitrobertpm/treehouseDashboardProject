@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>title</title>
+	<meta charset=utf-8 />
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+	<link rel="stylesheet" type="text/css" href="css/styles.css" />
+	<link rel="stylesheet" type="text/css" href="css/responsive.css" />
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,700' rel='stylesheet' type='text/css'>
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script> -->
+</head>
+<body>
+	<div class="primeWrap">
+		<header>
+			<h1><a href="#">Your<span>App<span>&trade;</span></span></a></h1>
+			<a href="#" class="bellButton"><img src="icons/icon-bell.svg" alt="Notification Bell" class="bell"><span class="notificationIndicator"></span></a>
+			<div class="avatarWrap">
+				<a href="#"><img src="img/me.jpg" alt="Avatar" class="avatar">Robert Manolis</a>
+			</div>
+		</header>
+		<div class="modal modalNav">
+			<div class="modalWrap">
+				<h2>These are your notifications</h2>
+				<ul>
+					<li>Have an Awesome day!</li>
+					<li>Be nice to people.</li>
+					<li>Do something towards levelling up.</li>
+					<li>Janice in accounting don't give a %@#$.</li>
+				</ul>
+				<a href="#" class="modalClose">close</a>
+				<br/>
+				<a href="#" class="lightOn">keep indicator light on<span class="notificationIndicator"></span></a>
+			</div>
+		</div>
+		<div class="spacer"></div>
+		<!-- <div class="navOverWrap"> -->
+			<nav>
+				<div class="navInnerWrap">
+					<div id="navIndicator" class="navIndicator niFirst"></div>
+					<ul>
+						<li class="navLink"><img src="icons/icon-dashboard.svg" alt="Dashboard Icon"><span class="navLinkName">Dashboard</span></li>
+						<li class="navLink"><img src="icons/icon-members.svg" alt="Members Icon"><span class="navLinkName">Members</span></li>
+						<li class="navLink"><img src="icons/icon-visits.svg" alt="Visits Icon"><span class="navLinkName">Visits</span></li>
+						<li class="navLink"><img src="icons/icon-settings.svg" alt="Settings Icon"><span class="navLinkName">Settings</span></li>
+					</ul>
+				</div>
+			</nav>
+		<!-- </div> -->
+		<div class="mainWrap">
+			<section class="dashboard">
+				<h2>Dashboard</h2>
+				<div class="searchWrap">
+					<input type="text" name="search" placeholder="Search" class="cerch">
+					<a href="#"><img src="icons/magGlass.png" alt="Magnifying Glass" class="magGlass"/></a>
+				</div>
+				<div class="alertWrap">
+					<p><span>Alert </span>Photo booth irony four loko direct trade, shabby chic kogi biodiesel kickstarter schlitz 8-bit locavore fixie.</p>
+					<a href="#" class="alertClose">x</a>
+				</div>
+			</section>
+			
+			<section class="traffic">
+				<h3>TRAFFIC</h3>
+				<ul>
+					<li class="hourly trafficDuration">Hourly</li>
+					<li class="daily trafficDuration">Daily</li>
+					<li class="weekly trafficDuration">Weekly</li>
+					<li class="monthly trafficDuration durationSelected">Monthly</li>
+				</ul>
+				
+				<div class="canvasWrap">
+					<canvas id="cHourly" width="300" height="300"></canvas>
+					<canvas id="cDaily" width="300" height="300"></canvas>
+					<canvas id="cWeekly" width="300" height="300"></canvas>
+					<canvas id="cMonthly" width="300" height="300"></canvas>
+
+				</div>
+
+			</section>
+			
+			<section class="dailyTraffic">
+				<h3>DAILY TRAFFIC</h3>
+				<canvas id="cDailyTraffic" width="300" height="300"></canvas>
+			</section>
+			
+			<section class="mobileUsers">
+				<h3>MOBILE USERS</h3>
+				<canvas id="cMobileUsers" width="300" height="300"></canvas>
+				<ul>
+					<li class="phones"><span></span>Phones</li>
+					<li class="tablets"><span></span>Tablets</li>
+					<li class="desktops"><span></span>Desktop</li>
+				</ul>
+			</section>
+			
+			<section class="socialStats">
+				<h3>SOCIAL STATS</h3>
+				<div class="socialStatsinnerWrap">
+					<div class="socialWrap">
+						<div class="socialIconWrap">
+							<img src="icons/icon-twitter.svg" alt="Twitter Icon">
+						</div>
+						<div class="socialStatsInfoWrap">
+							<h3>Twitter</h3>
+							<p class="twitterCount">10,345</p>
+						</div>
+						
+					</div>
+					<div class="socialWrap">
+						<div class="socialIconWrap">
+							<img src="icons/icon-facebook.svg" alt="Facebook Icon">
+						</div>
+						<div class="socialStatsInfoWrap">
+							<h3>Facebook</h3>
+							<p>8,739</p>
+						</div>
+					</div>
+					<div class="socialWrap">
+						<div class="socialIconWrap">
+							<img src="icons/icon-google-plus.svg" alt="Google+ Icon">
+						</div>
+						<div class="socialStatsInfoWrap">
+							<h3>Google+</h3>
+							<p>2,530</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			<section class="newMembers">
+				<h3>NEW MEMBERS</h3>
+				<ul>
+					<li><img src="img/laila.png" alt="New Member Photo">Laila Lilly<br><span class="newMembersEmail">laila.lilly6@example.com</span><span class="newMembersDate">10/15/15</span></li>
+					<hr>
+					<li><img src="img/bubba.png" alt="New Member Photo">Robert Rocket<br><span class="newMembersEmail">bubba.rocket11@example.com</span><span class="newMembersDate">10/15/15</span></li>
+					<hr>
+					<li><img src="img/paris.png" alt="New Member Photo">Paris Flower<br><span class="newMembersEmail">paris.flower14@example.com</span><span class="newMembersDate">10/15/15</span></li>
+					<hr>
+					<li><img src="img/myKids.png" alt="New Member Photo">The Kids<br><span class="newMembersEmail">the.kids@example.com</span><span class="newMembersDate">10/15/15</span></li>
+				</ul>
+			</section>
+			
+			<section class="recentActivity">
+				<h3>RECENT ACTIVITY</h3>
+				<ul>
+					<li><img src="img/laila.png" alt="New Member Photo"><span class="recentActivityComment">Laila Lilly commented on</span> YourApp's SEO Tips<br><span class="recentActivityAgo">4 hours ago</span><span class="recentActivityArrow"></span></li>
+					<hr>
+					<li><img src="img/bubba.png" alt="New Member Photo"><span class="recentActivityComment">Robert Rocket liked the post</span> Facebook's Chnages for 2016<br><span class="recentActivityAgo">5 hours ago</span><span class="recentActivityArrow"></span></li>
+					<hr>
+					<li><img src="img/paris.png" alt="New Member Photo"><span class="recentActivityComment">Paris Flower commented on</span> Facebook's Changes for 2016<br><span class="recentActivityAgo">5 hours ago</span><span class="recentActivityArrow"></span></li>
+					<hr>
+					<li><img src="img/myKids.png" alt="New Member Photo"><span class="recentActivityComment">The kids posted</span> YourApp's SEO Tips<br><span class="recentActivityAgo">1 day ago</span><span class="recentActivityArrow"></span></li>
+				</ul>
+			</section>
+			
+			<section class="messageUser">
+				<h3>MESSAGE USER</h3>
+				<form class="messageUserForm" name="messageUserForm">
+					<input type="text" name="messageUserCerch" placeholder="Search for User" autocomplete="on" class="userCerch messageUserInput">
+					<textarea  name="messageUserTextarea" placeholder="Message for User" class="userMessage messageUserInput"></textarea>
+				</form>
+				<button class="messageUserSubmit">SEND</button>
+				
+				<div class="modalMessageUser">
+					<p class="modalMessageUserNoEr modalMessageUserErP">You're message was successfully sent.</p>
+					<p class="modalMessageUserEr modalMessageUserErP">You must enter a valid user name.</p>
+					<button class="closeModalMessageUser">close</button>
+				</div>
+			</section>	
+				
+			<section class="settings" id="settings">
+				<h3>SETTINGS</h3>
+				<P>Send Email Notifications<span class="switchWrap"><span class="switchLabel">ON</span><span class="switchKnob"> </span></span></P>
+				<P>Set Profile to Public<span class="switchWrap"><span class="switchLabel">ON</span><span class="switchKnob"> </span></span></P>
+				<P>Set Access to Restricted<span class="switchWrap"><span class="switchLabel">ON</span><span class="switchKnob"> </span></span></P>
+				<P>Set Posts to Private<span class="switchWrap"><span class="switchLabel">ON</span><span class="switchKnob"> </span></span></P>
+				<P>Hibernate Account<span class="switchWrap"><span class="switchLabel">ON</span><span class="switchKnob"> </span></span></P>
+				<input type="text" name="search" placeholder="Search Label" autocomplete="on" class="labelCerch">
+				<button class="settingsSaveButton">SAVE</button>
+				<button disabled="true" class="settingsCancelButton">CANCEL</button>
+			</section>	
+		</div>
+		
+		<!-- <img src="dashboard.png"/> -->
+
+	</div>
+<script type="text/javascript" src="js/smoothscroll.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/scripts.js"></script>
+<script type="text/javascript" src="js/charts.js"></script>
+
+</body>
+</html>

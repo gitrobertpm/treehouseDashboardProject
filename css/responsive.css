@@ -1,0 +1,690 @@
+/********************************************************
+ RESPONSIVE.CSS
+
+ MEDIA QUERY STYLES FOR MEDIUM AND LARGER SCREENS
+ BASE STYLES IN STYLES.CSS 
+********************************************************/
+
+
+/*********************************************************
+ SMALL SCREENS
+**********************************************************/
+@media screen and (max-width: 501px) {
+
+}
+/*** END SMALL SCREENS ***********************************/
+
+
+
+/*********************************************************
+ MEDIUM SCREENS  500px
+**********************************************************/
+@media screen and (min-width: 500px) {	
+	/*********************************************************
+	 GENERAL 500px
+	**********************************************************/
+
+	/*** END GENERAL ******************************************/
+
+	
+	/*********************************************************
+	 HEADER  500px
+	**********************************************************/
+
+	/*** END HEADER ******************************************/
+
+
+	/*********************************************************
+	 NAV  500px
+	**********************************************************/
+
+	/*** END NAV *********************************************/
+
+
+	/*********************************************************
+	 MAIN WRAP  500px
+	**********************************************************/
+
+	/*** END MAIN WRAP ***************************************/
+	
+	
+	
+	/*********************************************************
+	 TRAFFIC  500px
+	**********************************************************/
+	.traffic ul li {
+		font-weight: bold;
+		color: rgb(125,125,125);
+		margin-right: 45px;
+	}
+	/*** END  ***************************************/
+	
+	
+	
+	
+	
+	/*********************************************************
+	 NEW MEMBERS 500px
+	**********************************************************/
+	.newMembersEmail {
+		font-size: 1em;
+	}
+	/*** END  ******************************************/
+}
+/*** END MEDIUM SCREENS ************************************/
+
+
+
+
+/*********************************************************
+ MEDIUM/LARGE SCREENS  750px
+**********************************************************/
+@media screen and (min-width: 750px) {	
+	/*********************************************************
+	 GENERAL  750px
+	**********************************************************/
+
+	/*** END GENERAL ******************************************/
+	
+	
+
+	
+	/*********************************************************
+	 HEADER  750px
+	**********************************************************/
+	header {
+		height: 100px;
+	}
+	
+	header h1 {
+		position: absolute;
+		left: 35px;
+		margin: auto;
+		padding-top: 10px;
+	}
+	
+	.avatarWrap {
+		position: absolute;
+		height: 50px;
+		right: 20px;
+		padding-left: 15px;
+		border-left: 1px solid rgb(95,95,195);
+	}
+	
+	.avatarWrap a {
+		display: block;
+		width: 200px;
+	}
+	
+	.avatar {
+		width: 30px;
+		height: 40px;
+		margin-left: auto;
+		margin-bottom: -10px;
+	}
+	
+	.bell {
+		margin: auto;
+		right: 260px;
+	}
+	
+	.bell:active, .bell:focus, .bell:hover {
+		-webkit-transform: rotate(-25deg);transform: rotate(-25deg);
+		
+		-webkit-transition-duration: .25s;transition-duration: .25s;
+	}
+	
+	.notificationIndicator {
+		margin: auto;
+		right: 255px;
+	}
+	/*** END HEADER ******************************************/
+
+
+
+
+	/*********************************************************
+	 NAV  750px
+	**********************************************************/
+	.spacer {
+		display: block;
+		content: "";
+		width: 100px;
+	}
+	
+	nav {
+		display: inline-block;
+		width: 100px;
+		float: left;
+	}
+	
+	.navInnerWrap {
+		width: 100px;
+	}
+	
+	nav ul li {
+		padding-top: 25px;
+		padding-bottom: 25px;
+	}
+	
+	nav ul li img:active, nav ul li img:focus, nav ul li img:hover {
+		-webkit-filter: drop-shadow(0px 0px 10px rgba(250,250,250,.3) );filter: drop-shadow(0px 0px 10px rgba(250,250,250,.3) );
+		-webkit-transition-duration: .25s;transition-duration: .25s;
+	}
+	
+	nav ul li	{
+		height: 100px;
+	}
+	
+	nav ul li img:active + .navLinkName, nav ul li img:focus + .navLinkName, nav ul li img:hover + .navLinkName {
+		display: block;
+	}
+	
+	.navIndicator {
+		position: absolute;
+		left: -28px;
+		width: 60px;
+		height: 5px;
+		margin: auto;
+		-webkit-transform: rotate(-90deg);transform: rotate(-90deg);
+		z-index: 999;
+	}
+	
+	.niFirst {
+		top: 60px;
+	}
+	
+	.niSecond {
+		top: 160px;
+	}
+
+	.niThird {
+		top: 260px;
+	}
+
+	.niFourth {
+		top: 360px;
+	}
+	/*** END NAV *********************************************/
+
+
+	
+	
+	/*********************************************************
+	 MODAL  750px
+	**********************************************************/
+	.modal {
+		background: rgba(0,0,0,0.75);
+	}
+	
+	.modalWrap {
+		position: relative;
+		width: 90%;
+		max-width: 1000px;
+		margin: 75px auto auto;
+		padding: 50px 100px 100px;
+		background: rgba(75,75,115,0.95);
+		border: 3px solid rgb(175,180,250);
+		border-radius: 5px;
+	}
+
+	.modal h2 {
+		font-size: 2.25em;
+		margin-bottom: 50px; 
+	}
+
+	.modal ul {
+		width: 470px;
+		margin: 25px auto 50px calc(50% - 235px);
+		padding-left: 15px;
+	}
+
+	.modal a {
+		position: absolute;
+		bottom: 75px;
+		left: 50%;
+	}
+	
+	.modal a:nth-of-type(1) {
+		margin-left: -220px;
+		width: 150px;
+	}
+	
+	.modal a:nth-of-type(2) {
+		margin-left: -35px;
+	}
+
+	.modal .notificationIndicator {
+		right: auto;
+	}
+	/*** END MODAL ****************************************/
+	
+	
+	
+	
+	/*********************************************************
+	 MAIN WRAP  750px
+	**********************************************************/
+	.mainWrap {
+		display: inline-block;
+		width: calc(100% - 100px);
+		float: right;
+	}
+	/*** END MAIN WRAP ***************************************/
+	
+	
+	
+	
+	/*********************************************************
+	 DASHBOARD  750px
+	**********************************************************/
+	.dashboard {
+		border: none;
+	}
+	
+	.searchWrap {
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: calc(100% - 175px);
+		height: 90px;
+		padding-top: 20px;
+		padding-right: 30px;
+		border-bottom: 1px solid rgb(225,225,225);
+		border-left: 1px solid rgb(225,225,225);
+		border-radius: 2px;
+	}
+	
+	.cerch {
+		float: right;
+		width: 420px;
+	}
+	
+	.magGlass {
+		top: 30px;
+		right: 40px;
+	}
+
+	.alertWrap {
+		margin-top: 45px;
+		padding: 15px 35px 15px 15px;
+		width: calc(100% - 30px);
+	}
+	/*** END DASHBOARD***************************************/
+	
+	
+	
+	
+	
+	/*********************************************************
+	 TRAFFIC  750px
+	**********************************************************/
+	.traffic h3 {
+		float: left;
+		display: inline-block;
+		width: 250px;
+	}
+
+	.traffic ul {
+		float: right;
+		display: inline-block;
+		text-align: center;
+		margin-right: 17.5px;
+	}
+
+	.traffic ul li {
+		width: 100px;
+		margin-left: 15px;
+		margin-right: auto;
+	}
+
+	.canvasWrap {
+		width: calc(100% - 25px);
+		padding-left: 20px;
+		/* margin-bottom: 35px; */
+		clear: both;
+	}
+	/*** END  ***************************************/
+	
+	
+	
+	
+	/*********************************************************
+	 DAILY TRAFFIC  750px
+	**********************************************************/
+	.dailyTraffic {
+		display: inline-block;
+		width: 50%;
+		/* max-height: 500px; */
+	}
+	/*** END  ***************************************/
+
+
+
+
+
+	/*********************************************************
+	 MOBILE USERS  750px
+	**********************************************************/
+	.mobileUsers {
+		display: inline-block;
+		width: 49%;
+		/* max-height: 500px; */
+		padding-bottom: 15px;
+		border-top: none;
+		border-left: 1px solid rgb(225,225,225);
+	}
+	
+	.mobileUsers ul {
+		top: 35px;
+		right: 25px;
+		padding: 5px;
+		background: rgba(250,250,250,0.7);
+		border: 1px solid rgb(225,225,225);
+		border-radius: 5px;
+	}
+	/*** END  ***************************************/
+	
+	
+	
+	
+	
+	
+	/*********************************************************
+	 SOCIAL STATS  750px
+	**********************************************************/
+	.socialStatsinnerWrap {
+		width: calc(100% - 10px);
+		margin-left: 15px;
+	}
+	
+	.socialWrap {
+		display: inline-block;
+		width: 32%;
+		margin-right: 5px;
+	}
+	
+	.socialWrap:nth-of-type(1) {
+		margin-left: -5px;
+	}
+	
+	.socialIconWrap {
+		top: -5px;
+		right: auto;
+		left: 15px;
+	}
+	
+	.socialWrap h3 {
+		margin-left: 60px;
+	}
+	
+	.socialWrap p {
+		display: block;
+		text-align: left;
+		float: none;
+		width: 150px;
+		margin-left: 70px;
+	}
+	/*** END  ***************************************/
+
+
+
+
+
+
+	/*********************************************************
+	 NEW MEMBERS  750px
+	**********************************************************/
+	.newMembers {
+		display: inline-block;
+		width: 50%;
+		padding-right: 20px;
+	}
+	/*** END  ******************************************/
+
+
+
+
+	/*********************************************************
+	 RECENT ACTIVITY  750px
+	**********************************************************/
+	.recentActivity {
+		display: inline-block;
+		width: 49%;
+		padding-right: 20px;
+		border-top: none;
+		border-bottom: 1px solid rgb(225,225,225);
+		border-left: 1px solid rgb(225,225,225);
+	}
+	/*** END  ******************************************/
+
+
+
+
+
+
+	/*********************************************************
+	 MESSAGE USER  750px
+	**********************************************************/
+	.messageUser {
+		display: inline-block;
+		width: 50%;
+	}
+	
+	.userMessage {
+		height: 288px;
+	}
+	
+	.modalMessageUser p {
+		margin: 100px auto 75px;
+		font-size: 1.2em;
+	}
+	
+	.modalMessageUser button {
+		
+	}
+	/*** END  ******************************************/
+
+
+
+
+
+	/*********************************************************
+	 SETTINGS  750px
+	**********************************************************/
+	.settings {
+		display: inline-block;
+		width: 49%;
+		border-top: none;
+		border-left: 1px solid rgb(225,225,225);
+	}
+	/*** END  ******************************************/
+}
+/*** END MEDIUM SCREENS ************************************/
+
+
+
+
+/*********************************************************
+ lARGE SCREENS  1000px
+**********************************************************/
+@media screen and (min-width: 1000px) {
+	/*********************************************************
+	 GENERAL  1000px
+	**********************************************************/
+
+
+	/*** END GENERAL ******************************************/
+	
+	/*********************************************************
+	 HEADER  1000px
+	**********************************************************/
+
+
+	/*** END HEADER ******************************************/
+
+
+
+
+	/*********************************************************
+	 NAV  1000px
+	**********************************************************/
+
+
+	/*** END NAV *********************************************/
+
+
+	/*********************************************************
+	 MAIN WRAP  1000px
+	**********************************************************/
+
+	/*** END MAIN WRAP ***************************************/
+
+
+	
+	
+	
+	/*********************************************************
+	 SOCIAL STATS  1000px
+	**********************************************************/
+	.socialStatsinnerWrap {
+		width: calc(100% - 20px);
+		text-align: left;
+	}
+	
+	.socialWrap {
+		width: 30%;
+		margin-right: 10px;
+	}
+	
+	.socialWrap:nth-of-type(2) {
+		margin-left: 3%;
+		margin-right: 3%;
+	}
+	
+	.socialIconWrap {
+		width: 85px;
+		height: 85px;
+		padding: 20px;
+		margin: 25px auto;
+	}
+
+	.socialIconWrap img {
+		width: 45px;
+	}
+	
+	.socialWrap h3 {
+		margin-left: 75px;
+	}
+	
+	.socialWrap p {
+		font-size: 3.5em;
+		margin-top: -10px;
+		margin-left: 90px;
+	}
+
+	/*** END  ***************************************/
+}
+/*** END LARGE SCREENS ****************************************/
+
+
+
+/*********************************************************
+ X lARGE SCREENS  1250px
+**********************************************************/
+@media screen and (min-width: 1250px) {
+	/*********************************************************
+	 GENERAL  1250px
+	**********************************************************/
+
+
+	/*** END GENERAL ******************************************/
+	
+	/*********************************************************
+	 HEADER  1250px
+	**********************************************************/
+
+
+	/*** END HEADER ******************************************/
+
+
+	/*********************************************************
+	 NAV  1250px
+	**********************************************************/
+
+
+	/*** END NAV *********************************************/
+
+
+	/*********************************************************
+	 MAIN WRAP  1250px
+	**********************************************************/
+
+	/*** END MAIN WRAP ***************************************/
+	
+	
+	/*********************************************************
+	 MOBILE USERS  1250px
+	**********************************************************/
+	.mobileUsers ul {
+		right: 25px;
+	}
+	/*** END  ***************************************/
+	
+	
+	
+	
+	/*********************************************************
+	 SOCIAL STATS 1250px
+	**********************************************************/
+	.socialStatsInfoWrap {
+		position: absolute;
+		top: 10px;
+		right: 35px;
+	}
+	
+	.socialWrap:nth-of-type(3) {
+		float: right;
+	}
+	
+	.socialIconWrap {
+		right: auto;
+		left: 35px;
+	}
+	
+	.socialWrap h3 {
+		margin-left: auto;
+	}
+	
+	.socialWrap p {
+		text-align: left;
+		margin-left: 10px;
+	}
+
+	/*** END  ***************************************/
+	
+	
+	
+	
+	/*********************************************************
+	 RECENT ACTIVITY  750px
+	**********************************************************/
+	.recentActivityArrow {
+		bottom: 10px;
+	}
+	/*** END  ******************************************/
+	
+	
+	
+	
+	/*********************************************************
+	 SETTINGS  750px
+	**********************************************************/
+	.switchWrap {
+		right: auto;
+		left: 50%;
+		margin-left: -37.5px;
+	}
+	/*** END  ******************************************/
+}
+/*** END X LARGE SCREENS **************************************/
