@@ -139,6 +139,7 @@
 	
 	.navIndicator {
 		position: absolute;
+		top: 60px;
 		left: -28px;
 		width: 60px;
 		height: 5px;
@@ -351,6 +352,7 @@
 	 SOCIAL STATS  750px
 	**********************************************************/
 	.socialStatsinnerWrap {
+		display: -webkit-box;display: -webkit-flex;display: -ms-flexbox;display: flex; 
 		width: calc(100% - 10px);
 		margin-left: 15px;
 	}
@@ -394,6 +396,7 @@
 		display: inline-block;
 		width: 50%;
 		padding-right: 20px;
+		border-bottom: 1px solid rgb(225,225,225);
 	}
 	/*** END  ******************************************/
 
@@ -422,6 +425,7 @@
 	.messageUser {
 		display: inline-block;
 		width: 50%;
+		border-top: none;
 	}
 	
 	.userMessage {
@@ -481,12 +485,6 @@
 	
 	.socialWrap {
 		width: 30%;
-		margin-right: 10px;
-	}
-	
-	.socialWrap:nth-of-type(2) {
-		margin-left: 3%;
-		margin-right: 3%;
 	}
 	
 	.socialIconWrap {
@@ -533,14 +531,14 @@
 	/*********************************************************
 	 SOCIAL STATS 1250px
 	**********************************************************/
+	.socialWrap {
+		max-width: 500px; 
+	}
+	
 	.socialStatsInfoWrap {
 		position: absolute;
 		top: 10px;
-		right: 35px;
-	}
-	
-	.socialWrap:nth-of-type(3) {
-		float: right;
+		right: 25px;
 	}
 	
 	.socialIconWrap {

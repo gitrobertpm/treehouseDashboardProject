@@ -218,6 +218,7 @@ var settingsSwitches = function() {
 		// STICK A NUMBERED HAT ON EACH SWITCH
 		switchWrap[i].hat = i;
 		
+		
 		// MAKE EACH SWITCH CLICKABLE
 		switchWrap[i].onclick = function() {
 			
@@ -232,6 +233,13 @@ var settingsSwitches = function() {
 				switchKnob[this.hat].setAttribute("style", "float: left");
 			}
 		};
+	}
+	
+	// LOOP THROUGH SWITCHES SET LAST THREE TO OFF POSITION
+	for (var j = 2; j < switchWrap.length; j++) {
+		switchLabel[j].setAttribute("style", "text-align: right; margin-left: 12px");
+		switchLabel[j].innerHTML = "OFF";
+		switchKnob[j].setAttribute("style", "float: left");
 	}
 };
 
