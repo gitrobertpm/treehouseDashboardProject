@@ -7,7 +7,6 @@ var width = window.innerWidth;
 var height = window.innerHeight;
 
 
-
 /*==============================================
 NOTIFICATION BELL
 ==============================================*/
@@ -97,8 +96,6 @@ linkLighterLoop();
 
 
 
-
-
 /*==============================================
 DASHBOARD
 ==============================================*/
@@ -114,8 +111,6 @@ var dashboard = function() {
 
 dashboard();
 //* ======================================== *//
-
-
 
 
 
@@ -162,8 +157,6 @@ trafficChartsLoop();
 
 
 
-
-
 /*==============================================
 MESSAGE USER
 ===============================================*/
@@ -202,8 +195,6 @@ sendUserMessage();
 
 
 
-
-
 /*==============================================
 SETTINGS
 ===============================================*/
@@ -211,13 +202,22 @@ var settingsSwitches = function() {
 	var switchWrap = document.getElementsByClassName("switchWrap");
 	var switchLabel = document.getElementsByClassName("switchLabel");
 	var switchKnob = document.getElementsByClassName("switchKnob");
+	var mainWrap = document.getElementsByClassName("mainWrap");
+	var mobileUsersLegend = document.getElementsByClassName("mobileUsersLegend");
+	var dropDownTimezone = document.getElementsByClassName("dropDownTimezone");
+	var newMembersDate = document.getElementsByClassName("newMembersDate");
+	var recentActivityAgo = document.getElementsByClassName("recentActivityAgo");
+	var h2 = document.getElementsByTagName("h2");
+	var h3 = document.getElementsByTagName("h3");
+	var p = document.getElementsByTagName("p");
+	var li = document.getElementsByTagName("li");
+	var inPut = document.getElementsByTagName("input");
 	
 	// LOOP THROUGH SETTINGS SWITCHES
 	for (var i = 0; i < switchWrap.length; i++) {
 		
 		// STICK A NUMBERED HAT ON EACH SWITCH
 		switchWrap[i].hat = i;
-		
 		
 		// MAKE EACH SWITCH CLICKABLE
 		switchWrap[i].onclick = function() {
@@ -227,27 +227,134 @@ var settingsSwitches = function() {
 				switchLabel[this.hat].setAttribute("style", "text-align: left; margin-left: 5px");
 				switchLabel[this.hat].innerHTML = "ON";
 				switchKnob[this.hat].setAttribute("style", "float: right");
+				
+				// CHANGE STYLE TO DARK THEME
+				if (this.hat === 4) {
+					
+					// ADD THEME TO LOCAL STORAGE
+					localStorage.setItem("theme", "dark");
+					
+					// DARK THEM STYLINGS
+					mainWrap[0].style.background = "rgb(50,50,50)";
+					h2[0].style.color = "rgb(200,200,200)";
+					mobileUsersLegend[0].style.background = "rgba(50,50,50,0.7)";
+					
+					for (var h = 0; h < newMembersDate.length; h++) {
+						newMembersDate[h].style.color = "rgb(120,120,190)";
+					}
+					
+					for (var g = 0; g < recentActivityAgo.length; g++) {
+						recentActivityAgo[g].style.color = "rgb(120,120,190)";
+					}
+					
+					for (var k = 0; k < h3.length; k++) {
+						h3[k].style.color = "rgb(200,200,200)";
+					}
+					
+					for (var m = 0; m < li.length; m++) {
+						li[m].style.color = "rgb(200,200,200)";
+					}
+					
+					for (var n = 0; n < p.length; n++) {
+						p[n].style.color = "rgb(200,200,200)";
+					}
+				}
 			} else {
 				switchLabel[this.hat].setAttribute("style", "text-align: right; margin-left: 12px");
 				switchLabel[this.hat].innerHTML = "OFF";
 				switchKnob[this.hat].setAttribute("style", "float: left");
+				
+				// CHANGE STYLE TO LIGHT THEME
+				if (this.hat === 4) {
+					
+					// ADD THEME TO LOCAL STORAGE
+					localStorage.setItem("theme", "light");
+					
+					// LIGHT THEM STYLINGS
+					mainWrap[0].style.background = "rgb(250,250,250)";
+					h2[0].style.color = "rgb(100,100,100)";
+					mobileUsersLegend[0].style.background = "rgba(250,250,250,0.7)";
+					
+					for (var hh = 0; hh < newMembersDate.length; hh++) {
+						newMembersDate[hh].style.color = "rgb(100,100,100)";
+					}
+					
+					for (var gg = 0; gg < recentActivityAgo.length; gg++) {
+						recentActivityAgo[gg].style.color = "rgb(100,100,100)";
+					}
+					
+					for (var kk = 0; kk < h3.length; kk++) {
+						h3[kk].style.color = "rgb(100,100,100)";
+					}
+					
+					for (var mm = 0; mm < li.length; mm++) {
+						li[mm].style.color = "rgb(100,100,100)";
+					}
+					
+					for (var nn = 0; nn < p.length; nn++) {
+						p[nn].style.color = "rgb(100,100,100)";
+					}
+				}
 			}
 		};
 	}
 	
-	// LOOP THROUGH SWITCHES SET LAST THREE TO OFF POSITION
-	for (var j = 2; j < switchWrap.length; j++) {
-		switchLabel[j].setAttribute("style", "text-align: right; margin-left: 12px");
-		switchLabel[j].innerHTML = "OFF";
-		switchKnob[j].setAttribute("style", "float: left");
+	// LOOP THROUGH SWITCHES AND SET OFF TO OFF
+	if (localStorage.getItem("theme") === "dark") {
+		
+		// SET DARK THEME IF "DARK" IS IN ITEM "THEME" IN LOCAL STORAGE
+		mainWrap[0].style.background = "rgb(50,50,50)";
+		h2[0].style.color = "rgb(200,200,200)";
+		
+		for (var h = 0; h < newMembersDate.length; h++) {
+			newMembersDate[h].style.color = "rgb(120,120,190)";
+		}
+		
+		for (var g = 0; g < recentActivityAgo.length; g++) {
+			recentActivityAgo[g].style.color = "rgb(120,120,190)";
+		}
+		
+		for (var k = 0; k < h3.length; k++) {
+			h3[k].style.color = "rgb(200,200,200)";
+		}
+		
+		for (var m = 0; m < li.length; m++) {
+			li[m].style.color = "rgb(200,200,200)";
+		}
+		
+		for (var n = 0; n < p.length; n++) {
+			p[n].style.color = "rgb(200,200,200)";
+		}
+		
+		// SET SWITCHES
+		for (var j = 2; j < switchWrap.length-1; j++) {
+			switchLabel[j].setAttribute("style", "text-align: right; margin-left: 12px");
+			switchLabel[j].innerHTML = "OFF";
+			switchKnob[j].setAttribute("style", "float: left");
+		}
+	} else {
+		// SET SWITCHES
+		for (var jj = 2; jj < switchWrap.length; jj++) {
+			switchLabel[jj].setAttribute("style", "text-align: right; margin-left: 12px");
+			switchLabel[jj].innerHTML = "OFF";
+			switchKnob[jj].setAttribute("style", "float: left");
+		}
 	}
 };
 
 settingsSwitches();
 
+
+// LOCAL STORAGE ON TIMEZONE SELECTION
+var dropDownTimezone = document.getElementsByClassName("dropDownTimezone");	
+dropDownTimezone[0].onchange = function() {
+	var opt = dropDownTimezone[0].selectedIndex;
+	localStorage.setItem("timeZone", opt);
+};
+
+dropDownTimezone[0].selectedIndex = localStorage.getItem("timeZone");
+
+
 // DISABLE CANCEL BUTTON
 document.getElementsByClassName("settingsCancelButton").disabled = true;
-
 //* ======================================== *//
-
-

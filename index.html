@@ -55,13 +55,13 @@
 		<div class="mainWrap">
 		
 			<section class="dashboard">
-				<h2>Dashboard</h2>
+				<h3>Dashboard</h3>
 				<div class="searchWrap">
 					<input type="text" name="search" placeholder="Search" class="cerch">
 					<a href="#"><img src="icons/magGlass.png" alt="Magnifying Glass" class="magGlass"/></a>
 				</div>
 				<div class="alertWrap">
-					<p><span>Alert </span>The charts are powered by Chart.js.  Besides that, I wrote all my own JavaScript for this project.  Start clicking on things and resizing the page to check out all the cool stuff I made.</p>
+					<h4><span>Alert </span>Besides Chart.js and smoothscroll.js, I wrote all my own JavaScript for this project.  Start clicking on things and resizing the page to check out all the cool stuff I made.</h4>
 					<a href="#" class="alertClose">x</a>
 				</div>
 			</section>
@@ -95,7 +95,7 @@
 			<section class="mobileUsers">
 				<h3>MOBILE USERS</h3>
 				<canvas id="cMobileUsers" width="300" height="300"></canvas>
-				<ul>
+				<ul class="mobileUsersLegend">
 					<li class="phones"><span></span>Phones</li>
 					<li class="tablets"><span></span>Tablets</li>
 					<li class="desktops"><span></span>Desktop</li>
@@ -111,7 +111,7 @@
 							<img src="icons/icon-twitter.svg" alt="Twitter Icon">
 						</div>
 						<div class="socialStatsInfoWrap">
-							<h3>Twitter</h3>
+							<h5>Twitter</h5>
 							<p class="twitterCount">10,345</p>
 						</div>
 					</div>
@@ -120,7 +120,7 @@
 							<img src="icons/icon-facebook.svg" alt="Facebook Icon">
 						</div>
 						<div class="socialStatsInfoWrap">
-							<h3>Facebook</h3>
+							<h5>Facebook</h5>
 							<p>8,739</p>
 						</div>
 					</div>
@@ -129,7 +129,7 @@
 							<img src="icons/icon-google-plus.svg" alt="Google+ Icon">
 						</div>
 						<div class="socialStatsInfoWrap">
-							<h3>Google+</h3>
+							<h5>Google+</h5>
 							<p>2,530</p>
 						</div>
 					</div>
@@ -142,9 +142,9 @@
 				<ul>
 					<li><img src="img/laila.png" alt="New Member Photo">Laila Lilly<br><span class="newMembersEmail">laila.lilly6@example.com</span><span class="newMembersDate">10/15/15</span></li>
 					<li><hr/></li>
-					<li><img src="img/bubba.png" alt="New Member Photo">Robert Rocket<br><span class="newMembersEmail">bubba.rocket11@example.com</span><span class="newMembersDate">10/15/15</span></li>
+					<li><img src="img/bubba.png" alt="New Member Photo">Robert Hemingway<br><span class="newMembersEmail">bubba.hemingway11@example.com</span><span class="newMembersDate">10/15/15</span></li>
 					<li><hr/></li>
-					<li><img src="img/paris.png" alt="New Member Photo">Paris Flower<br><span class="newMembersEmail">paris.flower14@example.com</span><span class="newMembersDate">10/15/15</span></li>
+					<li><img src="img/paris.png" alt="New Member Photo">Paris Rocket<br><span class="newMembersEmail">paris.rocket@example.com</span><span class="newMembersDate">10/15/15</span></li>
 					<li><hr/></li>
 					<li><img src="img/myKids.png" alt="New Member Photo">The Kids<br><span class="newMembersEmail">the.kids@example.com</span><span class="newMembersDate">10/15/15</span></li>
 				</ul>
@@ -156,9 +156,9 @@
 				<ul>
 					<li><img src="img/laila.png" alt="New Member Photo"><span class="recentActivityComment">Laila Lilly commented on</span> YourApp's SEO Tips<br><span class="recentActivityAgo">4 hours ago</span><span class="recentActivityArrow"></span></li>
 					<li><hr/></li>
-					<li><img src="img/bubba.png" alt="New Member Photo"><span class="recentActivityComment">Robert Rocket liked the post</span> Facebook's Chnages for 2016<br><span class="recentActivityAgo">5 hours ago</span><span class="recentActivityArrow"></span></li>
+					<li><img src="img/bubba.png" alt="New Member Photo"><span class="recentActivityComment">Robert Hemingway liked the post</span> Facebook's Chnages for 2016<br><span class="recentActivityAgo">5 hours ago</span><span class="recentActivityArrow"></span></li>
 					<li><hr/></li>
-					<li><img src="img/paris.png" alt="New Member Photo"><span class="recentActivityComment">Paris Flower commented on</span> Facebook's Changes for 2016<br><span class="recentActivityAgo">5 hours ago</span><span class="recentActivityArrow"></span></li>
+					<li><img src="img/paris.png" alt="New Member Photo"><span class="recentActivityComment">Paris Rocket commented on</span> Facebook's Changes for 2016<br><span class="recentActivityAgo">5 hours ago</span><span class="recentActivityArrow"></span></li>
 					<li><hr/></li>
 					<li><img src="img/myKids.png" alt="New Member Photo"><span class="recentActivityComment">The kids posted</span> YourApp's SEO Tips<br><span class="recentActivityAgo">1 day ago</span><span class="recentActivityArrow"></span></li>
 				</ul>
@@ -174,8 +174,8 @@
 				<button class="messageUserSubmit">SEND</button>
 				
 				<div class="modalMessageUser">
-					<p class="modalMessageUserNoEr modalMessageUserErP">You're message was successfully sent.</p>
-					<p class="modalMessageUserEr modalMessageUserErP">You must enter a valid user name.</p>
+					<h4 class="modalMessageUserNoEr modalMessageUserErP">You're message was successfully sent.</h4>
+					<h4 class="modalMessageUserEr modalMessageUserErP">You must enter a valid user name.</h4>
 					<button class="closeModalMessageUser">close</button>
 				</div>
 			</section>	
@@ -222,8 +222,8 @@
 				<P>Send Email Notifications<span class="switchWrap"><span class="switchLabel">ON</span><span class="switchKnob"> </span></span></P>
 				<P>Set Profile to Public<span class="switchWrap"><span class="switchLabel">ON</span><span class="switchKnob"> </span></span></P>
 				<P>Set Access to Restricted<span class="switchWrap"><span class="switchLabel">ON</span><span class="switchKnob"> </span></span></P>
-				<P>Set Posts to Private<span class="switchWrap"><span class="switchLabel">ON</span><span class="switchKnob"> </span></span></P>
-				<P>Hibernate Account<span class="switchWrap"><span class="switchLabel">ON</span><span class="switchKnob"> </span></span></P>
+				<P>Set Account to Hibernate<span class="switchWrap"><span class="switchLabel">ON</span><span class="switchKnob"> </span></span></P>
+				<P>Set Theme to Dark<span class="switchWrap"><span class="switchLabel">ON</span><span class="switchKnob"> </span></span></P>
 				<input type="text" name="search" placeholder="Search Label" autocomplete="on" class="labelCerch">
 				<button class="settingsSaveButton">SAVE</button>
 				<button class="settingsCancelButton">CANCEL</button>
