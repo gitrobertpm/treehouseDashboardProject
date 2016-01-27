@@ -208,6 +208,7 @@ var settingsSwitches = function() {
 	var newMembersDate = document.getElementsByClassName("newMembersDate");
 	var recentActivityAgo = document.getElementsByClassName("recentActivityAgo");
 	var settingsP = document.getElementsByClassName("settingsP");
+	var settingsThemeHintWrap = document.getElementsByClassName("settingsThemeHintWrap");
 	var settingsThemeHint = document.getElementsByClassName("settingsThemeHint");
 	var h2 = document.getElementsByTagName("h2");
 	var h3 = document.getElementsByTagName("h3");
@@ -236,8 +237,9 @@ var settingsSwitches = function() {
 					// ADD THEME TO LOCAL STORAGE
 					localStorage.setItem("theme", "dark");
 					
-					// VANISH SETINGS HINT
-					settingsThemeHint[0].style.display = "none";
+					// HIDE SETINGS HINT
+					settingsThemeHintWrap[0].style.display = "none";
+					localStorage.setItem("hint", "taken");
 					
 					// DARK THEM STYLINGS
 					mainWrap[0].style.background = "rgb(50,50,50)";
@@ -280,7 +282,7 @@ var settingsSwitches = function() {
 					localStorage.setItem("theme", "light");
 					
 					// VANISH SETINGS HINT
-					settingsThemeHint[0].style.display = "none";
+					settingsThemeHintWrap[0].style.display = "none";
 					
 					// LIGHT THEM STYLINGS
 					mainWrap[0].style.background = "rgb(250,250,250)";
@@ -322,6 +324,15 @@ var settingsSwitches = function() {
 		mainWrap[0].style.background = "rgb(50,50,50)";
 		h2[0].style.color = "rgb(200,200,200)";
 		mobileUsersLegend[0].style.background = "rgba(50,50,50,0.7)";
+		
+		// HIDE, CHANGE AND SHOW SETTINGS HINT
+		if (localStorage.getItem("hint") === "taken") {
+			settingsThemeHintWrap[0].style.display = "block";
+			settingsThemeHint[0].innerHTML = "Pretty cool, huh. <span class='hintSmiley'>: )</span> Now when you refresh the page, this message will be gone forever until you switch the theme back to light, and then refresh the page again, thanks to the awesome powers of JavaScript.";
+			localStorage.setItem("hint", "done");
+		} else if (localStorage.getItem("hint") === "done") {
+			settingsThemeHintWrap[0].style.display = "none";
+		}
 		
 		for (var h = 0; h < newMembersDate.length; h++) {
 			newMembersDate[h].style.color = "rgb(120,120,190)";

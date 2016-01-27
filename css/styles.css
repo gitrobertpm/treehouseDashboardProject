@@ -722,7 +722,7 @@ section h2, section h3 {
 	border-top: 1px solid rgb(225,225,225);
 }
 
-.settingsThemeHint {
+.settingsThemeHintWrap {
 	position: absolute;
 	top: 15px;
 	right: 10px;
@@ -738,16 +738,22 @@ section h2, section h3 {
 	border-radius: 5px 15px 5px 0;
 }
 
+.hintSmiley {
+	display: inline-block;
+	margin: auto 3px;
+	-webkit-transform: rotate(90deg);transform: rotate(90deg);
+}
+
 .settings h3 {
 	margin-bottom: 40px;
 }
 
-.settingsThemeHint h6 {
+.settingsThemeHint {
 	font-weight: 100;
 	font-size: .75em;
 }
 
-.settingsThemeHint h6:active, .settingsThemeHint h6:focus, .settingsThemeHint h6:hover {
+.settingsThemeHint:active, .settingsThemeHint:focus, .settingsThemeHint:hover {
 	color: rgb(130,220,130);
 }
 

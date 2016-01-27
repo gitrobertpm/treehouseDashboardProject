@@ -34,7 +34,7 @@
 	**********************************************************/
 	.dropDownTimezone {
 		Position: absolute;
-		top: 105px;
+		top: 140px;
 		left: 105px;
 		color: rgb(75,75,75);
 		width: calc(100% - 135px);
@@ -44,11 +44,7 @@
 		margin-bottom: 50px;
 	}
 	
-	.dropDownTimezone {
-		top: 140px;
-	}
-	
-	.settingsThemeHint {
+	.settingsThemeHintWrap {
 		font-size: 1.333em;
 		line-height: 20px; 
 	}
@@ -583,8 +579,8 @@
 	/*********************************************************
 	 SETTINGS  1250px
 	**********************************************************/
-	.settingsThemeHint {
-		font-size: 1.5em;
+	.settingsThemeHintWrap {
+		font-size: 1.4em;
 		line-height: 25px;
 	}
 	
