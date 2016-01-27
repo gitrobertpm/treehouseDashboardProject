@@ -742,6 +742,7 @@ section h2, section h3 {
 	display: inline-block;
 	margin: auto 3px;
 	-webkit-transform: rotate(90deg);transform: rotate(90deg);
+	z-index: 999;
 }
 
 .settings h3 {
@@ -774,6 +775,7 @@ section h2, section h3 {
 	background: rgb(245,245,245);
 	border: 1px solid rgb(120,120,190);
 	border-radius: 5px;
+	z-index: 0;
 }
 
 .switchWrap {

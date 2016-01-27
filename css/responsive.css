@@ -45,8 +45,8 @@
 	}
 	
 	.settingsThemeHintWrap {
-		font-size: 1.333em;
-		line-height: 20px; 
+		font-size: 1.25em;
+		line-height: 17.5px; 
 	}
 	/*** END  ******************************************/
 }
@@ -580,8 +580,8 @@
 	 SETTINGS  1250px
 	**********************************************************/
 	.settingsThemeHintWrap {
-		font-size: 1.4em;
-		line-height: 25px;
+		font-size: 1.35em;
+		line-height: 22.5px;
 	}
 	
 	.settings h3 {
