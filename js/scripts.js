@@ -208,6 +208,7 @@ var settingsSwitches = function() {
 	var newMembersDate = document.getElementsByClassName("newMembersDate");
 	var recentActivityAgo = document.getElementsByClassName("recentActivityAgo");
 	var settingsP = document.getElementsByClassName("settingsP");
+	var settingsThemeHint = document.getElementsByClassName("settingsThemeHint");
 	var h2 = document.getElementsByTagName("h2");
 	var h3 = document.getElementsByTagName("h3");
 	var p = document.getElementsByTagName("p");
@@ -234,6 +235,9 @@ var settingsSwitches = function() {
 					
 					// ADD THEME TO LOCAL STORAGE
 					localStorage.setItem("theme", "dark");
+					
+					// VANISH SETINGS HINT
+					settingsThemeHint[0].style.display = "none";
 					
 					// DARK THEM STYLINGS
 					mainWrap[0].style.background = "rgb(50,50,50)";
@@ -274,6 +278,9 @@ var settingsSwitches = function() {
 					
 					// ADD THEME TO LOCAL STORAGE
 					localStorage.setItem("theme", "light");
+					
+					// VANISH SETINGS HINT
+					settingsThemeHint[0].style.display = "none";
 					
 					// LIGHT THEM STYLINGS
 					mainWrap[0].style.background = "rgb(250,250,250)";

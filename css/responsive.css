@@ -30,7 +30,7 @@
 	
 	
 	/*********************************************************
-	 SETTINGS
+	 SETTINGS 500px
 	**********************************************************/
 	.dropDownTimezone {
 		Position: absolute;
@@ -38,6 +38,19 @@
 		left: 105px;
 		color: rgb(75,75,75);
 		width: calc(100% - 135px);
+	}
+	
+	.settings h3 {
+		margin-bottom: 50px;
+	}
+	
+	.dropDownTimezone {
+		top: 140px;
+	}
+	
+	.settingsThemeHint {
+		font-size: 1.333em;
+		line-height: 20px; 
 	}
 	/*** END  ******************************************/
 }
@@ -321,7 +334,7 @@
 		padding: 5px;
 		background: rgba(250,250,250,.7);
 		border: 1px solid rgb(225,225,225);
-		border-radius: 5px;
+		border-radius: 5px 25px 5px 0;
 	}
 	/*** END  ***************************************/
 	
@@ -401,7 +414,7 @@
 	}
 	
 	.userMessage {
-		height: 350px;
+		height: 355px;
 	}
 	
 	.modalMessageUser h4 {
@@ -421,13 +434,17 @@
 		border-left: 1px solid rgb(225,225,225);
 	}
 	
+	.settings h3 {
+		margin-bottom: 45px;
+	}
+	
 	.timeZoneWrap p {
 		margin-top: 0px;
 		margin-bottom: 65px;
 	}
 	
 	.dropDownTimezone {
-		top: 115px;
+		top: 175px;
 		left: 17px;
 		width: calc(100% - 45px);
 		margin-left: 12px;
@@ -476,6 +493,28 @@
 		margin-left: 90px;
 	}
 	/*** END  ***************************************/
+	
+	
+	/*********************************************************
+	 MESSAGE USER  1000px
+	**********************************************************/
+	.userMessage {
+		height: 335px;
+	}
+	/*** END  ******************************************/
+	
+	
+	/*********************************************************
+	 SETTINGS  1000px
+	**********************************************************/
+	.settings h3 {
+		margin-bottom: 25px;
+	}
+	
+	.dropDownTimezone {
+		top: 155px;
+	}
+	/*** END  ******************************************/
 }
 /*** END LARGE SCREENS ****************************************/
 
@@ -533,20 +572,38 @@
 	
 	
 	/*********************************************************
+	 MESSAGE USER  750px
+	**********************************************************/
+	.userMessage {
+		height: 325px;
+	}
+	/*** END  ******************************************/
+	
+	
+	/*********************************************************
 	 SETTINGS  1250px
 	**********************************************************/
-	.switchWrap {
-		right: auto;
-		left: 50%;
-		margin-left: -37.5px;
+	.settingsThemeHint {
+		font-size: 1.5em;
+		line-height: 25px;
+	}
+	
+	.settings h3 {
+		margin-bottom: 15px;
 	}
 	
 	.dropDownTimezone {
-		top: 115px;
+		top: 140px;
 		left: 17px;
 		width: calc(50% + 10px);
 		margin-left: 12px;
 		margin-bottom: 15px;
+	}
+	
+	.switchWrap {
+		right: auto;
+		left: 50%;
+		margin-left: -37.5px;
 	}
 	/*** END  ******************************************/
 }
