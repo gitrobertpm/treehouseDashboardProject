@@ -207,6 +207,7 @@ var settingsSwitches = function() {
 	var dropDownTimezone = document.getElementsByClassName("dropDownTimezone");
 	var newMembersDate = document.getElementsByClassName("newMembersDate");
 	var recentActivityAgo = document.getElementsByClassName("recentActivityAgo");
+	var settingsP = document.getElementsByClassName("settingsP");
 	var h2 = document.getElementsByTagName("h2");
 	var h3 = document.getElementsByTagName("h3");
 	var p = document.getElementsByTagName("p");
@@ -258,6 +259,10 @@ var settingsSwitches = function() {
 					for (var n = 0; n < p.length; n++) {
 						p[n].style.color = "rgb(200,200,200)";
 					}
+					
+					for (var q = 0; q < settingsP.length; q++) {
+						settingsP[q].style.color = "rgb(120,120,190)";
+					}
 				}
 			} else {
 				switchLabel[this.hat].setAttribute("style", "text-align: right; margin-left: 12px");
@@ -294,6 +299,10 @@ var settingsSwitches = function() {
 					for (var nn = 0; nn < p.length; nn++) {
 						p[nn].style.color = "rgb(100,100,100)";
 					}
+					
+					for (var qq = 0; qq < settingsP.length; qq++) {
+						settingsP[qq].style.color = "rgb(100,100,100)";
+					}
 				}
 			}
 		};
@@ -305,6 +314,7 @@ var settingsSwitches = function() {
 		// SET DARK THEME IF "DARK" IS IN ITEM "THEME" IN LOCAL STORAGE
 		mainWrap[0].style.background = "rgb(50,50,50)";
 		h2[0].style.color = "rgb(200,200,200)";
+		mobileUsersLegend[0].style.background = "rgba(50,50,50,0.7)";
 		
 		for (var h = 0; h < newMembersDate.length; h++) {
 			newMembersDate[h].style.color = "rgb(120,120,190)";
@@ -324,6 +334,10 @@ var settingsSwitches = function() {
 		
 		for (var n = 0; n < p.length; n++) {
 			p[n].style.color = "rgb(200,200,200)";
+		}
+		
+		for (var q = 0; q < settingsP.length; q++) {
+			settingsP[q].style.color = "rgb(120,120,190)";
 		}
 		
 		// SET SWITCHES
@@ -356,5 +370,5 @@ dropDownTimezone[0].selectedIndex = localStorage.getItem("timeZone");
 
 
 // DISABLE CANCEL BUTTON
-document.getElementsByClassName("settingsCancelButton").disabled = true;
+document.getElementsByClassName("settingsCancelButton")[0].disabled = true;
 //* ======================================== *//
