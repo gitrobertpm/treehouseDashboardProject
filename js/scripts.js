@@ -47,18 +47,19 @@ var stickyNav = function() {
 	var navInnerWrap = document.getElementsByClassName("navInnerWrap");
 	var mainWrap = document.getElementsByClassName("mainWrap");
 	var distance = document.getElementsByTagName("html")[0].scrollTop;
+	var distance2 = document.body.scrollTop;
 	
 	// MAKE RESPONSIVE NAV STICK ON SCROLL
 	if (width < 750) {
-		if (distance > 87) {
+		if (distance > 87 || distance2 > 87) {
 			navInnerWrap[0].style.position = "fixed";
-		} else if (distance < 88) {
+		} else if (distance < 88 || distance2 < 88) {
 			navInnerWrap[0].style.position = "relative";
 		}
 	} else if (width > 749) {
-		if (distance > 60) {
+		if (distance > 60 || distance2 > 60) {
 			navInnerWrap[0].style.position = "fixed";
-		} else if (distance < 61) {
+		} else if (distance < 61 || distance2 < 61) {
 			navInnerWrap[0].style.position = "relative";
 		}
 	}

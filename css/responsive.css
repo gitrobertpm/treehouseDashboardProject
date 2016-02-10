@@ -118,6 +118,7 @@
 		display: inline-block;
 		width: 100px;
 		float: left;
+		box-shadow: none;
 	}
 	
 	.navInnerWrap {
@@ -231,6 +232,7 @@
 		display: inline-block;
 		width: calc(100% - 100px);
 		float: right;
+		box-shadow: 1px 0px 3px rgba(50,50,50,0.7) inset;
 	}
 	/*** END MAIN WRAP ***************************************/
 	
@@ -330,6 +332,9 @@
 		padding: 5px;
 		background: rgba(250,250,250,.7);
 		border: 1px solid rgb(225,225,225);
+		border-top: 1px solid rgb(225,225,225);
+		border-bottom: 1px solid rgb(150,150,150);
+		box-shadow: 1px 1px 3px rgba(50,50,50,0.3);
 		border-radius: 5px 25px 5px 0;
 	}
 	/*** END  ***************************************/
